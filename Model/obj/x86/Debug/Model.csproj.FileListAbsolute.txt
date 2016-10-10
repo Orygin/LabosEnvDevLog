@@ -1,0 +1,17 @@
+c:\Users\orygin\documents\visual studio 2015\Projects\AppLabo3\Model\bin\x86\Debug\Model.dll
+c:\Users\orygin\documents\visual studio 2015\Projects\AppLabo3\Model\bin\x86\Debug\Model.pdb
+c:\Users\orygin\documents\visual studio 2015\Projects\AppLabo3\Model\bin\x86\Debug\Model.pri
+c:\Users\orygin\documents\visual studio 2015\Projects\AppLabo3\Model\obj\x86\Debug\Model.csprojResolveAssemblyReference.cache
+c:\Users\orygin\documents\visual studio 2015\Projects\AppLabo3\Model\obj\x86\Debug\Model.dll
+c:\Users\orygin\documents\visual studio 2015\Projects\AppLabo3\Model\obj\x86\Debug\Model.pdb
+c:\Users\orygin\documents\visual studio 2015\Projects\AppLabo3\Model\obj\x86\Debug\priconfig.xml
+c:\Users\orygin\documents\visual studio 2015\Projects\AppLabo3\Model\obj\x86\Debug\priconfig.xml.intermediate
+c:\Users\orygin\documents\visual studio 2015\Projects\AppLabo3\Model\obj\x86\Debug\layout.resfiles
+c:\Users\orygin\documents\visual studio 2015\Projects\AppLabo3\Model\obj\x86\Debug\layout.resfiles.intermediate
+c:\Users\orygin\documents\visual studio 2015\Projects\AppLabo3\Model\obj\x86\Debug\resources.resfiles
+c:\Users\orygin\documents\visual studio 2015\Projects\AppLabo3\Model\obj\x86\Debug\resources.resfiles.intermediate
+c:\Users\orygin\documents\visual studio 2015\Projects\AppLabo3\Model\obj\x86\Debug\pri.resfiles
+c:\Users\orygin\documents\visual studio 2015\Projects\AppLabo3\Model\obj\x86\Debug\pri.resfiles.intermediate
+c:\Users\orygin\documents\visual studio 2015\Projects\AppLabo3\Model\obj\x86\Debug\qualifiers.txt
+c:\Users\orygin\documents\visual studio 2015\Projects\AppLabo3\Model\obj\x86\Debug\qualifiers.txt.intermediate
+c:\Users\orygin\documents\visual studio 2015\Projects\AppLabo3\Model\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt

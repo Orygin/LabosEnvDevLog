@@ -1,0 +1,11 @@
+﻿<Application
+    x:Class="AppLabo3.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vm="using:AppLabo3.ViewModel"
+    xmlns:local="using:AppLabo3"
+    RequestedTheme="Light">
+    <Application.Resources>
+        <vm:ViewModelLocator x:Key="Locator"/>
+    </Application.Resources>
+</Application>

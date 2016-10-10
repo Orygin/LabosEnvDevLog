@@ -10,10 +10,18 @@ namespace Labo5.Model
 {
     class WeatherService
     {
-        public async Task<IEnumerable<WeatherForecast>> GetForecast()
+        public async Task<IEnumerable<WeatherForecast>> GetForecast(int cityId)
+        {
+            return await FetchForecast("http://api.openweathermap.org/data/2.5/forecast?id=" + cityId.ToString() + "&mode=json&APPID=e6f6a715dcd801d9ea1678adb73ef17d&lang=fr");
+        }
+        public async Task<IEnumerable<WeatherForecast>> GetForecast(string city)
+        {
+            return await FetchForecast("http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&mode=json&APPID=e6f6a715dcd801d9ea1678adb73ef17d&lang=fr");
+        }
+        private async Task<IEnumerable<WeatherForecast>> FetchForecast(string url)
         {
             var wc = new HttpClient();
-            var weather = await wc.GetStringAsync("http://api.openweathermap.org/data/2.5/forecast?id=2790472&mode=json&APPID=e6f6a715dcd801d9ea1678adb73ef17d&lang=fr");
+            var weather = await wc.GetStringAsync(url);
             var rawWeather = JObject.Parse(weather);
             var forecast = rawWeather["list"].Children().Select(d => new WeatherForecast()
             {

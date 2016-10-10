@@ -15,16 +15,25 @@ namespace Labo5.ViewModel
         {
             ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
             SimpleIoc.Default.Register<MainViewModel>();
+            SimpleIoc.Default.Register<ForecastViewModel>();
 
             NavigationService navigationPages = new NavigationService();
             SimpleIoc.Default.Register<INavigationService>(() => navigationPages);
             navigationPages.Configure("MainPage", typeof(MainPage));
+            navigationPages.Configure("ForecastPage", typeof(ForecastPage));
         }
         public MainViewModel Main
         {
             get
             {
                 return ServiceLocator.Current.GetInstance<MainViewModel>();
+            }
+        }
+        public ForecastViewModel Forecast
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<ForecastViewModel>();
             }
         }
     }

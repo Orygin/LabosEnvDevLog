@@ -9,6 +9,7 @@
     DataContext="{Binding Source={StaticResource Locator}, Path=Main}">
 
     <Grid Background="{ThemeResource AppBarBackgroundThemeBrush}">
-        <ListView ItemsSource="{Binding Forecast}" ItemTemplate="{StaticResource WeatherTemplate1}"/>
+        <TextBox x:Name="CityName" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="{Binding CityName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top"/>
+        <Button x:Name="EditStudent" Command="{Binding EditStudentCommand}" Content="Weather" VerticalAlignment="Top" Margin="86,10,0,0" />
     </Grid>
 </Page>

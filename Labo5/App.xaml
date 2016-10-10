@@ -1,0 +1,34 @@
+﻿<Application
+    x:Class="Labo5.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Labo5"
+    xmlns:vm="using:Labo5.ViewModel"
+    RequestedTheme="Light">
+    <Application.Resources>
+        <local:WeatherDescriptionToImageValueConverter x:Key="WeatherImage"></local:WeatherDescriptionToImageValueConverter>
+        <local:StringFormatConverter x:Key="StringConverter"></local:StringFormatConverter>
+        <vm:ViewModelLocator x:Key="Locator"/>
+        <DataTemplate x:Key="WeatherTemplate1">
+            <Grid Margin="15">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Image Width="50" Height="50" Source="{Binding WeatherDescription, Converter={StaticResource WeatherImage}}"></Image>
+                <StackPanel Grid.Column="1" Margin="15,0,0,0" Width="200">
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Date, Converter={StaticResource StringConverter}, ConverterParameter='{}{0:dd MMM yyyy hh:mm}'}" VerticalAlignment="Top"></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding WeatherDescription}" VerticalAlignment="Top"></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top">
+                        <Run Text="Min"></Run>
+                        <Run Text="{Binding MinTemp}"></Run>
+                        <Run Text="°"></Run>
+                        <Run Text="Max"></Run>
+                        <Run Text="{Binding MaxTemp}"></Run>
+                        <Run Text="°"></Run>
+                    </TextBlock>
+                </StackPanel>
+            </Grid>
+        </DataTemplate>
+    </Application.Resources>
+</Application>
